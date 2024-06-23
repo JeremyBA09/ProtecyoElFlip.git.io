@@ -1,0 +1,88 @@
+/* Estilos para el contenedor principal del slider de imágenes */
+.image-slider {
+    position: relative; /* Posiciona el slider de manera relativa */
+    max-width: 100%; /* Establece el ancho máximo del slider al 100% del contenedor padre */
+    overflow: hidden; /* Oculta el contenido que se desborde del slider */
+}
+
+/* Estilos para el contenedor que almacena las diapositivas de imágenes */
+.slides {
+    display: flex; /* Organiza las diapositivas en una fila */
+    transition: transform 0.5s ease; /* Transición suave al desplazar las diapositivas */
+}
+
+/* Estilos para cada diapositiva individual */
+.slide {
+    min-width: 100%; /* Cada diapositiva ocupa al menos el ancho completo del contenedor */
+    flex: 1 0 100%; /* Utiliza todo el espacio disponible sin crecer ni encogerse, ocupando el 100% del ancho */
+    display: flex; /* Permite centrar el contenido horizontalmente */
+    justify-content: center; /* Centra horizontalmente el contenido de la diapositiva */
+    align-items: center; /* Centra verticalmente el contenido de la diapositiva */
+    position: relative; /* Permite posicionar elementos secundarios dentro de la diapositiva */
+}
+
+/* Estilos para las imágenes dentro de las diapositivas */
+.slider-image {
+    display: block; /* Muestra las imágenes como bloques */
+    max-width: 100%; /* Limita el ancho máximo de la imagen al 100% del contenedor */
+    max-height: 200px; /* Limita la altura máxima de la imagen a 200px */
+    object-fit: contain; /* Ajusta la imagen dentro de su contenedor manteniendo la relación de aspecto */
+    opacity: 0; /* Inicialmente hace que las imágenes sean invisibles */
+    transition: opacity 0.5s ease; /* Transición suave al cambiar la opacidad de las imágenes */
+}
+
+/* Estilos para la imagen activa (visible) en el slider */
+.slider-image.active {
+    opacity: 1; /* Hace que la imagen activa sea completamente visible */
+}
+
+/* Estilos para el contenedor de las flechas de navegación */
+.slider-arrows {
+    position: absolute; /* Posiciona las flechas de navegación de manera absoluta */
+    top: 50%; /* Coloca las flechas en la mitad superior del contenedor */
+    transform: translateY(-50%); /* Centra verticalmente las flechas */
+    width: 100%; /* Las flechas ocupan todo el ancho disponible */
+    display: flex; /* Organiza las flechas en una fila */
+    justify-content: space-between; /* Distribuye las flechas uniformemente con espacio entre ellas */
+    pointer-events: none; /* Desactiva la interacción de eventos en las flechas */
+}
+
+/* Estilos para las flechas de navegación */
+.arrow {
+    cursor: pointer; /* Cambia el cursor a una mano cuando se coloca sobre las flechas */
+    font-size: 30px; /* Tamaño del ícono de flecha */
+    background: rgba(255, 255, 255, 0.5); /* Fondo semitransparente para las flechas */
+    padding: 10px; /* Espacio alrededor del contenido de las flechas */
+    border-radius: 50%; /* Bordes redondeados para las flechas */
+    pointer-events: auto; /* Reactiva la interacción de eventos para las flechas */
+}
+
+/* Estilos para la flecha de navegación hacia la izquierda */
+.arrow.prev {
+    margin-left: 10px; /* Ajusta el margen izquierdo para separar la flecha de la imagen */
+}
+
+/* Estilos para la flecha de navegación hacia la derecha */
+.arrow.next {
+    margin-right: 10px; /* Ajusta el margen derecho para separar la flecha de la imagen */
+}
+
+/* Oculta los radios utilizados para controlar las diapositivas de manera dinámica */
+.slider-radio {
+    display: none;
+}
+
+/* Selector para la primera diapositiva activa */
+#slide1:checked ~ .slides {
+    transform: translateX(0%); /* Desplaza las diapositivas hacia la primera posición */
+}
+
+/* Selector para la segunda diapositiva activa */
+#slide2:checked ~ .slides {
+    transform: translateX(-100%); /* Desplaza las diapositivas hacia la segunda posición */
+}
+
+/* Selector para la tercera diapositiva activa */
+#slide3:checked ~ .slides {
+    transform: translateX(-200%); /* Desplaza las diapositivas hacia la tercera posición */
+}

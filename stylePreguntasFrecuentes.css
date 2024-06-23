@@ -1,0 +1,80 @@
+/* Estilos para la sección "Preguntas Frecuentes" */
+#preguntas-frecuentes {
+    background-color: #333333; /* Fondo gris oscuro */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 80px 0; /* Espaciado interno */
+    text-align: center; /* Alineación del contenido */
+}
+
+#preguntas-frecuentes h2 {
+    color: #FFC107; /* Color dorado para el título */
+    font-size: 2.5rem; /* Tamaño del título */
+    margin-bottom: 40px; /* Espacio inferior */
+}
+
+#preguntas-frecuentes p {
+    font-size: 1.2rem; /* Tamaño del texto */
+    margin-bottom: 40px; /* Espacio inferior */
+}
+
+.faq-accordion {
+    max-width: 800px;
+    margin: 0 auto; /* Centramos el acordeón */
+    text-align: left; /* Alineación izquierda para mejor legibilidad */
+}
+
+.faq-item {
+    background-color: #444444; /* Fondo gris más oscuro para cada pregunta */
+    margin-bottom: 10px; /* Espacio entre preguntas */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.faq-question {
+    display: block; /* Se comporta como un bloque para ocupar todo el ancho */
+    background-color: #444444; /* Fondo gris más oscuro */
+    color: #FFC107; /* Texto dorado */
+    cursor: pointer; /* Manito al pasar el cursor */
+    padding: 15px; /* Espaciado interno */
+    width: 100%; /* Ancho completo */
+    border: none; /* Sin bordes */
+    text-align: left; /* Alineación a la izquierda */
+    font-size: 1.2rem; /* Tamaño del texto */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.faq-question:hover {
+    background-color: #555555; /* Cambio de color al pasar el cursor */
+}
+
+.faq-answer {
+    background-color: #555555; /* Fondo gris más oscuro para las respuestas */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 15px; /* Espaciado interno */
+    display: none; /* Ocultamos inicialmente */
+    border-top: 1px solid #666666; /* Borde superior */
+}
+
+.faq-answer p {
+    margin: 0; /* Sin márgenes */
+}
+
+.faq-answer a {
+    color: #FFC107; /* Enlaces dorados */
+    text-decoration: none; /* Sin subrayado */
+    border-bottom: 1px solid #FFC107; /* Borde inferior dorado */
+    transition: border-bottom 0.3s ease; /* Transición suave */
+}
+
+.faq-answer a:hover {
+    border-bottom: 1px solid transparent; /* Quitar borde al pasar el cursor */
+}
+
+/* Mostrar respuesta cuando el input está marcado */
+.faq-item input[type="checkbox"]:checked + .faq-question + .faq-answer {
+    display: block; /* Mostrar respuesta */
+}
+
+/* Ocultar los checkbox */
+.faq-item input[type="checkbox"] {
+    display: none;
+}

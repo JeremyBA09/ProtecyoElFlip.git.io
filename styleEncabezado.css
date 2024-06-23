@@ -1,0 +1,49 @@
+/* Estilo general para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif; /* Tipo de fuente */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin relleno */
+    box-sizing: border-box; /* Para incluir el relleno y borde en el ancho y alto */
+    background-color: #000000; /* Fondo negro */
+    color: #FFFFFF; /* Texto blanco */
+}
+
+/* Estilo del encabezado */
+header {
+    display: flex; /* Usar flexbox para el diseño */
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; /* Alinear elementos verticalmente */
+    background-color: #808080; /* Fondo gris */
+    padding: 10px 20px; /* Relleno */
+    border-bottom: 1px solid #FFD700; /* Borde dorado en la parte inferior */
+}
+
+.logo img {
+    height: 100px; /* Altura del logo */
+}
+
+/* Estilo de la navegación */
+nav ul {
+    list-style: none; /* Sin viñetas */
+    display: flex; /* Usar flexbox */
+    gap: 20px; /* Espacio entre enlaces */
+}
+
+nav a {
+    text-decoration: none; /* Sin subrayado */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 5px 10px; /* Relleno */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo de los enlaces al pasar el cursor */
+nav a:hover {
+    background-color: #FFD700; /* Fondo dorado */
+    color: #000000; /* Texto negro */
+}
+
+.search-bar input {
+    padding: 5px; /* Relleno */
+    border: 1px solid #ddd; /* Borde claro */
+    border-radius: 5px; /* Bordes redondeados */
+}

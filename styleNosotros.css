@@ -1,0 +1,57 @@
+/* Estilos para la sección Nosotros */
+#nosotros .table-container {
+    margin-top: 30px;
+    overflow-x: auto; /* Para permitir desplazamiento horizontal en tablas anchas */
+}
+
+#nosotros .info-table {
+    width: 100%;
+    border-collapse: collapse; /* Colapsar bordes de la tabla */
+    margin: 0 auto; /* Centrar la tabla */
+    background-color: #444444; /* Fondo gris oscuro */
+    color: #FFFFFF; /* Texto blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Ocultar contenido que desborda */
+}
+
+#nosotros .info-table th,
+#nosotros .info-table td {
+    padding: 15px; /* Relleno interno */
+    border: 1px solid #666666; /* Borde gris */
+}
+
+#nosotros .info-table th {
+    background-color: #333333; /* Fondo gris más oscuro para encabezados */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+#nosotros .info-table td {
+    text-align: justify; /* Justificar texto en celdas */
+}
+
+#nosotros .video-container {
+    margin-top: 30px;
+    text-align: center; /* Centrar contenido */
+}
+
+#nosotros .video-links {
+    display: flex; /* Usar flexbox para alinear elementos en una fila */
+    gap: 40px; /* Espacio entre los enlaces */
+    justify-content: center; /* Centrar los enlaces horizontalmente */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en múltiples líneas si es necesario */
+}
+
+#nosotros .video-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFD700; /* Fondo dorado */
+    color: #000000; /* Texto negro */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición al suave */
+}
+
+#nosotros .video-links a:hover {
+    background-color: #FFFFFF; /* Fondo blanco al pasar el cursor */
+    color: #000000; /* Texto negro */
+}

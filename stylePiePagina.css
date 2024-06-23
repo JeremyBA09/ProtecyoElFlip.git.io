@@ -1,0 +1,57 @@
+/* Estilo del pie de página */
+footer {
+    background-color: #808080; /* Fondo gris */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 20px; /* Relleno */
+    text-align: center; /* Centrar el texto */
+}
+
+.footer-content {
+    display: flex; /* Usar flexbox */
+    justify-content: space-between; /* Espaciar elementos */
+    align-items: center; /* Alinear verticalmente al centro */
+    flex-direction: row; /* Alinear los elementos en una fila horizontal */
+    padding-bottom: 20px; /* Relleno inferior */
+    border-bottom: 1px solid #444; /* Borde inferior */
+}
+
+.footer-content > div {
+    flex: 1; /* Hacer que cada div ocupe el mismo espacio */
+    margin: 0 10px; /* Margen horizontal para espaciado */
+}
+
+.footer-content .logo-footer img {
+    height: 90px; /* Altura del logo */
+    width: auto; /* Ancho automático para mantener la proporción */
+    margin-bottom: 0px; /* Espacio debajo del logo */
+}
+
+.footer-content .contact-info p {
+    margin: 5px 0; /* Margen vertical */
+}
+
+.footer-content .social-media a {
+    display: flex; /* Usar flexbox */
+    align-items: center; /* Alinear verticalmente al centro */
+    margin: 5px 0; /* Margen vertical */
+    color: #FFFFFF; /* Color del texto */
+    text-decoration: none; /* Quitar subrayado */
+}
+
+.footer-content .social-media a .social-icon {
+    height: 25px; /* Altura del icono */
+    width: auto; /* Ancho automático */
+    margin-right: 5px; /* Espacio a la derecha del icono */
+}
+
+.footer-bottom {
+    margin-top: 20px; /* Margen superior */
+    text-align: center; /* Alineación central del texto */
+    font-size: 14px; /* Tamaño de fuente */
+}
+
+.footer-bottom a {
+    color: #FFFFFF; /* Color del enlace */
+    text-decoration: none; /* Quitar subrayado */
+    margin-left: 10px; /* Espacio a la izquierda del enlace */
+}

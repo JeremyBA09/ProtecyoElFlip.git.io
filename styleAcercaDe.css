@@ -1,0 +1,52 @@
+/* Estilos para la sección "Acerca de" */
+#acerca-de {
+    background-color: #333333 ; /* Fondo claro */
+    padding: 80px 0; /* Espaciado interno */
+    text-align: center; /* Alineación del contenido */
+    color: #F6F6F6; /* Color de texto principal */
+}
+
+#acerca-de h2 {
+    color: #FFC107; /* Color dorado para el título */
+    font-size: 2.5rem; /* Tamaño del título */
+    margin-bottom: 40px; /* Espacio inferior */
+}
+
+.informacion-autor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.autor-info {
+    max-width: 600px;
+    text-align: left;
+}
+
+.autor-info h3 {
+    color: #FFC107; /* Color dorado para el subtítulo */
+    font-size: 2rem; /* Tamaño del subtítulo */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.autor-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.autor-info ul li {
+    font-size: 1.1rem; /* Tamaño del texto de la lista */
+    margin-bottom: 10px; /* Espacio entre elementos de lista */
+}
+
+.autor-foto img {
+    max-width: 200px; /* Ancho máximo de la imagen */
+    height: auto; /* Altura automática */
+    border-radius: 50%; /* Borde redondeado para forma circular */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 20px; /* Espacio superior */
+}
+
